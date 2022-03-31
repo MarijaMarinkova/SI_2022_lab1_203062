@@ -1,0 +1,120 @@
+1.Јас инсталирав Git,и веднаш после тоа направив профил на Github. Со тоа што линкот од мојот профил го додадов на поставениото место за прикачување на линкот.
+
+2.Го променив името на гранката main во master како што ми беше кажано во документот.
+
+3.Креирав нов репозиториум со име SI_2022_lab1_203062 во него додадов README file, во кој што ги додадов моето име,презиме и број на индекс.
+
+4.По креирањето на репозиториумот,го клонирав со помош на командата git clone и линкот од репозиториумот,потоа влегов во фолдерот со cd.
+
+5.Потоа ја креирав текстуалната датотека со командата nano shopping_list.txt,така што оваа команда овозможи да влезам во датотеката и да додам 5 прехранбени производи.Потоа направив прво git add shopping_list.txt па потоа направив commit.
+
+6.Повторно се вратив на текстуалната датотека со командата nano shopping_list.txt,но овој пат се вратив со цел на прехранбените производи да му додадам количина.Одкако додадов количина за да направам commit и add во исто време ја искористив наредбата git commit -a -m "Add quantities to the items".
+
+7.По извршувањето на овие наредби креирав две гранки git branch branch1 и git branch branch2.
+
+8.user@DESKTOP-NM18PDA MINGW64 ~/SI_2022_lab1_203062 (master)
+$ git log
+commit 9e76eb7696ff395adfa59ff7f60a276cd3dc895f (HEAD -> master, branch2, branch1)
+Author: MM <marija.marinkova10@gmail.com>
+Date:   Thu Mar 31 17:58:25 2022 +0200
+
+    Add quantities to the items
+
+commit 245db3b0b7a6d52b01d3746221bdafe8fbe9e174
+Author: MM <marija.marinkova10@gmail.com>
+Date:   Thu Mar 31 17:52:50 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b3fcb21f6d91ea53e50667ab0f5f51a43f9685b9 (origin/master, origin/HEAD)
+Author: MarijaMarinkova <100223204+MarijaMarinkova@users.noreply.github.com>
+Date:   Thu Mar 31 17:42:15 2022 +0200
+
+    Initial commit
+
+user@DESKTOP-NM18PDA MINGW64 ~/SI_2022_lab1_203062 (master)
+$
+
+9.Ги додадов сите гранки на Github, односно тоа го направив со следните наредби: git push origin master,git push origin branch1,git push origin branch2.
+
+10.Потоа се префрлив на гранката branch1 со командата git checkou branch1.
+
+11.Потоа повторно се вратив на nano shopping_list.txt командата,и ја сменив количината на 5-тата ставка и направив git add и git commit заедно.
+
+12.Потоа од како ја направив промената се вратив на гранката master со git checkout master.
+
+13.Потоа повторно се вратив на nano shopping_list.txt командата,и ја сменив количината на 2-та ставка и направив git add и git commit заедно.
+
+14.Ги додадов сите гранки на Github така што ги употребив следните команди: git push origin master, git push origin branch1 и git push origin branch2.
+
+15.Потоа како што беше побарано во документот се вратив на гранката branch2 со помош на командаta git checkout branch2.
+
+16.Се вратив со комндата nano shopping_list.txt и го сменав името на 4-тата ставка во листата и направив git add и git commit истовремено.
+
+17.user@DESKTOP-NM18PDA MINGW64 ~/SI_2022_lab1_203062 (branch2)
+$ git log
+commit ea684142011612b208f43234cc832f94e469e0a9 (HEAD -> branch2)
+Author: MM <marija.marinkova10@gmail.com>
+Date:   Thu Mar 31 18:27:57 2022 +0200
+
+    Modify item #4
+
+commit 9e76eb7696ff395adfa59ff7f60a276cd3dc895f (origin/branch2)
+Author: MM <marija.marinkova10@gmail.com>
+Date:   Thu Mar 31 17:58:25 2022 +0200
+
+    Add quantities to the items
+
+commit 245db3b0b7a6d52b01d3746221bdafe8fbe9e174
+Author: MM <marija.marinkova10@gmail.com>
+Date:   Thu Mar 31 17:52:50 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b3fcb21f6d91ea53e50667ab0f5f51a43f9685b9
+Author: MarijaMarinkova <100223204+MarijaMarinkova@users.noreply.github.com>
+Date:   Thu Mar 31 17:42:15 2022 +0200
+
+    Initial commit
+
+user@DESKTOP-NM18PDA MINGW64 ~/SI_2022_lab1_203062 (branch2)
+$
+
+18.Потоа направив nano shopping_list.txt и додадов 6-та ставка.Најпрво направив git add а потоа $ git commit --amend -m "Modify item #4 and add item #6".
+
+19.user@DESKTOP-NM18PDA MINGW64 ~/SI_2022_lab1_203062 (branch2)
+$ git log
+commit a3f5bc7bda3a97dea58630b183fdb7260128a8a0 (HEAD -> branch2)
+Author: MM <marija.marinkova10@gmail.com>
+Date:   Thu Mar 31 18:27:57 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 9e76eb7696ff395adfa59ff7f60a276cd3dc895f (origin/branch2)
+Author: MM <marija.marinkova10@gmail.com>
+Date:   Thu Mar 31 17:58:25 2022 +0200
+
+    Add quantities to the items
+
+commit 245db3b0b7a6d52b01d3746221bdafe8fbe9e174
+Author: MM <marija.marinkova10@gmail.com>
+Date:   Thu Mar 31 17:52:50 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b3fcb21f6d91ea53e50667ab0f5f51a43f9685b9
+Author: MarijaMarinkova <100223204+MarijaMarinkova@users.noreply.github.com>
+Date:   Thu Mar 31 17:42:15 2022 +0200
+
+    Initial commit
+
+user@DESKTOP-NM18PDA MINGW64 ~/SI_2022_lab1_203062 (branch2)
+$
+
+20.Овде не се случи никаков конфликт, и беше употребена рекурзивна стратегија.Тоа го направив со помош на командите $ git checkout master и $ git merge branch1.
+
+21.Да овде се случи конфликт.Конфликтот беше решен со тоа што прво направив $ git pull па потоа ја извршив командата $ git merge branch2 и овде се случи конфликтот па затоа се вратив во едиторот и го решив конфликтот со промените. потоа направив git add па $ git commit -m"Merge branch 'branch2' . Овде употребив рекуризивна стратегија.
+
+22.Ја додадов текстуалната датотека со git add 203062.txt заедно со соодветниот комит.
+
+23.Потоа направив push на се на github.
